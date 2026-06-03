@@ -105,7 +105,7 @@ def adjust_sentiment_labels(df):
     return df
 
 # Load and clean training data
-train_df = pd.read_csv('C:/Users/Punith/FINAL/sentiment/src/twitter_training.csv')
+train_df = pd.read_csv('twitter_training.csv')
 train_df.columns = ['Tweet ID', 'entity', 'sentiment', 'tweet']
 train_df = train_df.dropna(subset=['tweet', 'sentiment'])
 train_df['tweet'] = train_df['tweet'].fillna('').apply(clean_text)
@@ -113,7 +113,7 @@ train_df['sentiment'] = train_df['sentiment'].str.lower().str.strip()
 train_df = adjust_sentiment_labels(train_df)
 
 # Load and clean validation data
-validation_df = pd.read_csv('C:/Users/Punith/FINAL/sentiment/src/twitter_validation.csv')
+validation_df = pd.read_csv('twitter_validation.csv')
 validation_df.columns = ['Tweet ID', 'entity', 'sentiment', 'tweet']
 validation_df = validation_df.dropna(subset=['tweet', 'sentiment'])
 validation_df['tweet'] = validation_df['tweet'].fillna('').apply(clean_text)

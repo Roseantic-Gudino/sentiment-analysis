@@ -162,7 +162,7 @@ st.markdown("""
 
 # Sidebar
 with st.sidebar:
-    st.image("C:\\Users\\Punith\\FINAL\\sentiment\\src\\1.jpeg", use_container_width=True)
+    st.image("1.jpeg", use_container_width=True)
     # st.title("Sentiment Analysis")
     st.markdown("Analyze sentiments in social media comments or reviews.")
     st.markdown("Get insights on how people feel about a topic or product using sentiment analysis.")
