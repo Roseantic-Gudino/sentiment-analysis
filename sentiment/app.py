@@ -170,7 +170,7 @@ with st.sidebar:
     st.markdown("Analyze sentiments in social media comments or reviews.")
     st.markdown("Get insights on how people feel about a topic or product using sentiment analysis.")
     st.markdown("---")
-    #st.markdown("Developed by **Punith & Team**")
+    st.markdown("Developed by **Roseantic & Team**")
 
 # Main App
 st.title("💬 Social Media Sentiment Analysis")
@@ -242,4 +242,4 @@ if st.button("Clear Text"):
 
 # Footer
 st.markdown("---")
-#st.markdown("Made by **Punith & Team**")
+st.markdown("Made by **Roseantic & Team**")
