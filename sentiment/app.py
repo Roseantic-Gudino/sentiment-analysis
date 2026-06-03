@@ -164,7 +164,8 @@ st.markdown("""
 
 # Sidebar
 with st.sidebar:
-    st.image("1.jpeg", use_container_width=True)
+    img_path = os.path.join(os.path.dirname(__file__), "1.jpeg")
+    st.image(img_path, use_container_width=True)
     # st.title("Sentiment Analysis")
     st.markdown("Analyze sentiments in social media comments or reviews.")
     st.markdown("Get insights on how people feel about a topic or product using sentiment analysis.")
