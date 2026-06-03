@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import joblib
 from preprocess import clean_text
@@ -5,8 +6,9 @@ from visualizations import sentiment_scoring_lollipop_chart, sunburst_visualizat
 from collections import Counter
 
 # Load Logistic Regression model and vectorizer
-model = joblib.load('models/logistic_regression.pkl')
-vectorizer = joblib.load('models/vectorizer.pkl')
+BASE_DIR = os.path.dirname(__file__)
+model = joblib.load(os.path.join(BASE_DIR, "models", "logistic_regression.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "models", "vectorizer.pkl"))
 
 # App configuration
 st.set_page_config(page_title="Sentiment Analysis App", page_icon="💬", layout="wide")
