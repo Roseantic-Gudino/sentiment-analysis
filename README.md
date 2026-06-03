@@ -10,6 +10,8 @@
 
 This project analyzes the sentiment of Twitter data using a Logistic Regression model to classify tweets as **positive, negative, or neutral**. It includes interactive visualizations such as **sunburst and lollipop charts**, and a **Streamlit web app** that allows users to explore sentiment predictions in an easy-to-use interface.
 
+👉 Try this app here: https://social-media-sentiment-analysis-project.streamlit.app/
+
 ---
 
 ## ✨ Features
